@@ -1,0 +1,40 @@
+---
+title: "R Notebook"
+output:
+  md_document:
+    variant: markdown_github
+---
+
+#  Correlation
+
+## Create a scatterplot matrix
+
+I couldn't see how to create a scatterplot matrix in Jamovi right away so I found some R functions. The code is below.
+
+```{r}
+# The pairs and plots functions are part of baseR
+
+# pairs using column numbers
+pairs(data[,2:4], pch = 19)
+
+# pairs using formula format
+pairs(~Revise + Exam + Anxiety, data=data, pch = 19)
+
+# Plot
+plot(data[ , 2:4] , pch=20 , cex=1.5 , col="#69b3a2")
+
+
+# the ggpairs function is part of GGally package which expands ggplot2 package
+
+library(ggplot2)
+library(GGally)
+
+# ggpairs using column numbers
+GGally::ggpairs(data,columns=2:4)
+
+# ggpairs using column names
+GGally::ggpairs(data,columns=c('Revise','Exam','Anxiety'),lower = list(continuous = "smooth"))
+
+```
+
+
