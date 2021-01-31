@@ -1,4 +1,4 @@
-# Pearson Correlation Tutorial
+# Pearson Correlation Exercise
 
 ## Summary of steps to complete
 
