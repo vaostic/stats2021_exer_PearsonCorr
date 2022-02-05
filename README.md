@@ -1,5 +1,7 @@
 # Pearson Correlation Exercise
 
+A video demonstration for this assignment is available at: https://youtu.be/BDgTzm8L5hw
+
 ## Summary of steps to complete
 
 - [ ] Fork this repository so you have your own copy to work on.
